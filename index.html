@@ -12,11 +12,12 @@
     rel="stylesheet">
 
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Juego del Ahorcado</title>
     
 </head>
 
-<body>
+<body class="cuerpo">
     <header><a href="https://dev.oscarzdi.ml"><img src="./img/logo.png" alt="Logo"></a></header>
 
     <section>
@@ -25,8 +26,8 @@
             <button class="boton--new-palabra" id="agregarPalabra">Agregar nueva palabra</button>
         </div>
         <div class="contenedor" id="agregar__palabra">
-            <textarea name="" id="nueva_palabra" cols="30" rows="10" class="nuevaPalabra"
-                placeholder="Ingrese una palabra"></textarea>
+            <textarea name="" cols="30" rows="10" class="nuevaPalabra"
+                placeholder="Ingrese una palabra" id="textNueva"></textarea>
             <p class="conditions"><img src="./img/exclamation.svg" alt="Simbolo de exclamación" class="exclamacion">
                 Máx. 8 letras</p>
             <div class="botones">
@@ -37,13 +38,13 @@
 
         <div class="contenedor" id="juego">
             <div class="canvas__juego">
-                <canvas width="1200px" height="800px" id="canvasgame"></canvas>
+                <canvas width="1200px" height="800px" id="canvas"></canvas>
                 <div class="palabra">
                     <div class="palabra--oculta">
 
                     </div>
                     <div class="palabra--letras">
-
+                        <div id="letra--incorrecta"></div>
                     </div>
                 </div>
             </div>
