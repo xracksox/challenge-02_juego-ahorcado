@@ -1,11 +1,213 @@
-.hide {
-    display: none;
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #3c3c3c;
+    overflow: hidden;
 }
 
-.mostrar {
-    display: unset;
+header {
+    height: auto;
+}
+
+header img {
+    height: auto;
+    padding: 1rem;
 }
 
 .pantalla {
-    height: 90vh;
+    height: 88vh;
+}
+
+.pantalla_inicio {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #222222;
+    text-shadow: rgba(255, 255, 255, 0.2) 0px 0px 10px;
+    padding: 50px;
+    margin: 30px;
+    transition: all .2s;
+}
+
+.titulo:hover {
+    text-shadow: rgba(0, 0, 139, 0.2) 0px 0px 30px;
+}
+
+.boton--iniciar {
+    width: 20%;
+    padding: 20px;
+    margin: 30px;
+    color: white;
+    background: rgba(0, 0, 139, 0.2);
+}
+
+.boton--new-palabra {
+    width: 20%;
+    padding: 20px;
+    margin: 30px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    transition: all .1s;
+}
+
+button:hover {
+    box-shadow: rgba(153, 153, 153, 0.5) 2px 2px 30px;
+}
+
+button:active {
+    box-shadow: rgba(34, 34, 34, 0.5)5px -5px 50px;
+}
+
+.agregar--palabra {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #222222;
+    text-shadow: rgba(255, 255, 255, 0.2) 0px 0px 10px;
+    padding: 50px;
+    margin: 30px;
+    transition: all .2s;
+}
+
+.nuevaPalabra {
+    width: 40%;
+    height: 50%;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 200;
+    background: transparent;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    border: none;
+    overflow: auto;
+    outline: none;
+}
+
+.nuevaPalabra::placeholder {
+    color: #fff;
+    font-weight: 200;
+}
+
+.conditions {
+    color: #ddd;
+    padding: 1rem;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.add--guardar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 3rem;
+    width: 15rem;
+    padding: 20px;
+    margin: 30px;
+    color: #222;
+    font-weight: 500;
+}
+
+.add--cancelar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 15rem;
+    padding: 20px;
+    margin: 30px;
+    color: #222;
+    font-weight: 500;
+}
+
+.pantalla_juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones--juego {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.juego--nuevo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 15rem;
+    padding: 20px;
+    margin: 30px;
+    color: #222;
+    font-weight: 500;
+}
+
+.juego--salir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 15rem;
+    padding: 20px;
+    margin: 30px;
+    color: #222;
+    font-weight: 500;
+}
+
+footer {
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.pie--texto {
+    height: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.pie--enlace {
+    color: lightgray;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.hide {
+    display: none;
 }
