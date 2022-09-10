@@ -152,6 +152,7 @@ button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 95%;
 }
 
 .botones--juego {
@@ -194,6 +195,7 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    padding-bottom: 0.7rem;
 }
 
 .pie--texto {
